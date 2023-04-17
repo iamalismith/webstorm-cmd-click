@@ -1,26 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Component from "/Component";
+import NotWorkingComponent from "/NotWorkingComponent";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  // cmd + click here works and takes us directly to the src/Component/Component.tsx declaration
+  return <>
+    <Component />
+    <NotWorkingComponent />
+  </>;
 }
 
 export default App;
